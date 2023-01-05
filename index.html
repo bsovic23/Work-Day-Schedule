@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./develop/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,14 +28,30 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <!--Time Blocks-->
     <section class="container">
-      <div><p>9 AM</p><p id="9" class="time-block">MOCK INFORMATION HERE</p><button id="btn-9">SAVE</button></div>
-      <div><p>10 AM</p><p id="9" class="time-block">MOCK INFORMATION HERE</p><button id="btn-9">SAVE</button></div>
+      <div>
+        <div id="9" class="row time-block past">
+          <div>9AM</div>
+          <textarea id="text"></textarea>
+          <button onclick="saveNote()" class="btn saveBtn"><i class="fas fa-save"></i></button>
+        </div>
     </section>
+
+    <section class="container">
+      <div>
+        <div id="10" class="row time-block past">
+          <div>10AM</div>
+          <textarea id="text"></textarea>
+          <button onclick="saveNote()" class="btn saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+    </section>
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="./develop/js/index.js"></script>
   </body>
 </html>
