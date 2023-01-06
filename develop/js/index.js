@@ -6,19 +6,43 @@ console.log('this js script works');
 // IF block = current or past or future then class name changes to css class names
 
 
+
+////////////////////////////////////////////////////////////// 
 // Brit created below
 
 
-// Creating Date Function 
+// Creating Date and Time Function 
 
 number = 2;
 timeNumber = 0;
 
+const date = function() {
+
+    const datefunction = new Date();
+
+    let day = datefunction.getDate();
+    let month = datefunction.getMonth() + 1;
+    let year = datefunction.getFullYear();
+
+    const datehtml = month + "-" + day + "-" + year;
+
+    const datehtmlnew = `<div>${datehtml}</div>`
+
+    const $currentDayHtml = document.querySelector("#currentDay");
+
+    $currentDayHtml.innerHTML = datehtmlnew;
+};
+
 const time = function() {
-    console.log('time function works');
+
+    const d = new Date();
+    let hour = d.getHours();
+
+    console.log(hour);
 };
 
 time();
+date();
 
 
 // Create functions for taking in the notes for the timeblocks -> should each have id that puts them in the correct block
