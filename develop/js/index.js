@@ -39,6 +39,7 @@ const time = function() {
     let hour = d.getHours();
 
     console.log(hour);
+    // Insert function that changes the color of the blocks depending on time
 };
 
 time();
