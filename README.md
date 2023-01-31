@@ -1,4 +1,4 @@
-# Work-Day-Schedule
+# work-day-scheduler
 
 ## Project Description
 
@@ -13,7 +13,7 @@ based on if the timeblock is in the past, present, or the future.
 
 ## Deployed Application:
 
-The deployed application can be found at: https://bsovic23.github.io/Work-Day-Scheduler/
+The deployed application can be found at: https://bsovic23.github.io/work-day-scheduler/
 
 ## Screenshots
 
